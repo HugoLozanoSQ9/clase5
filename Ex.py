@@ -16,20 +16,11 @@ koders = [
 
 edades = [25,24,32,52,25,18,20,39,26,36,27,49]
 
-koder = [k for k in koders]
-edad = [e for e in edades]
+#Metodo zip (es análogo a un cierre)
 
-koders_edades=(koder,edad)
-print(koders_edades)
+lista= tuple(zip(koders,edades))
 
-#nombres = ', '.join(koders_edades)
 
-#print(f'Hola koders la lista completa es: {nombres}')
-
-"""
-Hola Koders. La lista completa es: 
-Luis - 25
-Benajmin -32
-Enrique - 25
-
-"""
+print('Hola koders la lista completa es:')
+for x,y in lista:
+    print(f'{x} - {y}')
